@@ -3,7 +3,6 @@
     height: auto;
   }  
 body {
-    overflow: hidden;
     background-image: url("img/Banner5.jpg");
     background-size: cover;
     background-position: center;

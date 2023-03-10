@@ -17,3 +17,7 @@ if (element) {
 		element.classList.add("run-animation");
 	}, false);
 }
+
+        function zoom() {
+            document.body.style.zoom = "90%" 
+        }
