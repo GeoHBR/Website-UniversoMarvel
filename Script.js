@@ -2,7 +2,7 @@ element = document.getElementById("animate");
 
 if (element) {
 	// reset the transition by...
-	element.addEventListener("click", function(e) {
+	element.addEventListener("click", function (e) {
 		e.preventDefault;
 
 		console.log('element', element.classList);
@@ -17,7 +17,7 @@ if (element) {
 		element.classList.add("run-animation");
 	}, false);
 }
+function zoom() {
+	document.body.style.zoom = "90%"
+}
 
-        function zoom() {
-            document.body.style.zoom = "90%" 
-        }
