@@ -20,4 +20,21 @@ if (element) {
 function zoom() {
 	document.body.style.zoom = "90%"
 }
+function showModal(element) {
+	if (element.tagName === "IMG") {
+	  var modal = document.getElementById("myModal");
+	  var modalImg = document.getElementById("modalImg");
+	  
+	  modal.style.display = "block";
+	  modalImg.src = element.src;
+	}
+  }
+  
+  function hideModal() {
+	var modal = document.getElementById("myModal");
+	modal.style.display = "none";
+  }
+  
+  
+
 

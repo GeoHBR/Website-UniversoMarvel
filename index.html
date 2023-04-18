@@ -67,7 +67,11 @@
                         <button type="button" class="btn btn-primary">Assistir Trailer</button>
                         </a>
                     </div>
-                    <img src="img/Slider1.jpg" alt="Homem-Formiga e a Vespa: Quantumania">
+                    <img id="myImg" src="img/Slider1.jpg" onclick="showModal(this)" alt="Homem-Formiga e a Vespa: Quantumania">
+                    <div id="myModal" class="modal">
+                        <img id="modalImg" src="img/Slider1.jpg">
+                        <span class="close" onclick="hideModal()">&times;</span>
+                    </div>
                 </div>
             </div>
         </div>

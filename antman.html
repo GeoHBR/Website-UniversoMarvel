@@ -55,7 +55,6 @@
             <div class="carousel">
                 <div class="slider">
                     <div class="slide-content">
-                        <h5 class="slide-des">Ultimo Lançamento</h5>
                         <h1 class="movie-title">Homem-Formiga e a Vespa: Quantumania</h1>
                         <p class="movie-des">Quando Cassie, filha de Scott Lang, desenvolve um dispositivo que
                             permitiria a comunicação com o reino quântico, o experimento termina em desastre,
@@ -65,7 +64,11 @@
                             <button type="button" class="btn btn-primary">Assistir Trailer</button>
                         </a>
                     </div>
-                    <img src="img/Slider1.jpg" alt="Homem-Formiga e a Vespa: Quantumania">
+                    <img id="myImg" src="img/Slider1.jpg" onclick="showModal(this)" alt="Homem-Formiga e a Vespa: Quantumania" >
+                    <div id="myModal" class="modal">
+                        <img id="modalImg" src="img/Slider1.jpg">
+                        <span class="close" onclick="hideModal()">&times;</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,9 +77,13 @@
         <div class="movies-list">
             <button class="pre-btn"><img src="images/pre.png" alt=""></button>
             <button class="nxt-btn"><img src="images/nxt.png" alt=""></button>
-            <div class="card-container">
-                <div class="card">
-                    <img src="img/Personagens/Scott-Lang.png" class="card-img" alt="">
+            <div class="card-container" onclick="showModal(this)">
+                <div class="card" >
+                    <img id="myImg" src="img/Personagens/Scott-Lang.png" alt="Scott Lang">
+                    <div id="myModal" class="modal">
+                        <img id="modalImg" src="img/Personagens/Scott-Lang.png">
+                        <span class="close" onclick="hideModal()">&times;</span>
+                    </div>
                     <div class="card-body">
                         <h2 class="name">Homem-Formiga/Scott Lang</h2>
                         <h6 class="des">Scott Lang foi o segundo Homem-Formiga e se tornou herói para ajudar Dr. Henry
